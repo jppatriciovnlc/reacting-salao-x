@@ -1,10 +1,11 @@
 import * as S from './styled';
 
 const SideMenu = (props) => {
-
+    let toggle = props.toggle
+    console.log(toggle)
     return(
        <S.container
-        toggle = {props.toggle}
+        toggle = {toggle}
        >
            <S.UL>
                 <S.LI>

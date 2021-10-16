@@ -7,14 +7,11 @@ export const container = styled.div`
     height: 200px;
     position: fixed;
     top: 75px;
-    right: ${(props => props.toggle? '-200px' : "0")};
+    right: ${(props => props.toggle? "0" : '-200px')};
     background-color: #030303;
     opacity: 0.95;
 
-    @media(min-width: 900px) {
-        display: none;
-        
-    }
+    
 `
 
 export const UL = styled.ul`
