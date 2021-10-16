@@ -1,11 +1,26 @@
 
-
+import * as S from './styled';
+import { LoginForm } from '../../components';
+import { useContext } from 'react';
+import AppContext from '../../vars';
 
 const Login = (props) => {
 
+    const context = useContext(AppContext);
+
+
+    const handleOnSubmit = (e) => {        
+        context.setUser(e.user)    
+    }
+
     return (
         <>
-        <p>Login</p>
+            <S.Container>
+                <LoginForm
+                    handleOnSubmit={handleOnSubmit}
+                />
+            </S.Container>
+        
         </>
     )
 
