@@ -6,7 +6,6 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 `
 
 export const Logo1 = styled.p`
@@ -17,8 +16,9 @@ export const Logo1 = styled.p`
 `
 
 export const Logo2 = styled.p`
-    font-size: 3.0rem;
+    font-size: 4.0rem;
     font-weight: 700;
-    color: #000000;
+    color: #fafafa;
     font-family: 'roboto';
+    text-shadow: 2px 2px #faa292;
 `

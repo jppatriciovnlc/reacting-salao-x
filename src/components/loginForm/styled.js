@@ -24,9 +24,18 @@ export const Container = styled.div`
 
 `
 
+export const Login = styled.p`
+    font-size: 3.0rem;
+    font-weight: 600;
+    color: #faa292;
+    font-family: 'roboto';
+    text-shadow: 1px 1px #0a0a0a;
+    margin-bottom: 50px;
+`
+
 export const Title = styled.p`
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #000000;
     font-family: 'roboto';
     margin-bottom: 10px;
@@ -34,7 +43,7 @@ export const Title = styled.p`
 
 export const Subtitle = styled.p`
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #000000;
     font-family: 'roboto';
     margin-bottom: 20px;

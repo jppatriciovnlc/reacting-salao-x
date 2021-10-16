@@ -30,7 +30,7 @@ const LoginForm = (props) => {
     return (
         <>
             <S.Container>
-                <Logo/>
+                <S.Login> Login </S.Login>
                 <S.Title> Manicure e Podóloga </S.Title>
                 <S.Subtitle>Cuidando bem de você</S.Subtitle>
                 <Input

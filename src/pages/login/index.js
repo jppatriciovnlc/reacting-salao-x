@@ -1,6 +1,6 @@
 
 import * as S from './styled';
-import { LoginForm } from '../../components';
+import { LoginForm, Navbar } from '../../components';
 import { useContext } from 'react';
 import AppContext from '../../vars';
 
@@ -16,6 +16,9 @@ const Login = (props) => {
     return (
         <>
             <S.Container>
+                <Navbar 
+                    logged={false}
+                />
                 <LoginForm
                     handleOnSubmit={handleOnSubmit}
                 />
