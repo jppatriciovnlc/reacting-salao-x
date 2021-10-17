@@ -2,9 +2,8 @@ import * as S from './styled';
 
 const SideMenu = (props) => {
     let toggle = props.toggle
-    console.log(toggle)
     return(
-       <S.container
+       <S.Container
         toggle = {toggle}
        >
            <S.UL>
@@ -15,7 +14,7 @@ const SideMenu = (props) => {
                     <S.StyledLink to="/agendamento">Agendamentos</S.StyledLink>
                 </S.LI>
             </S.UL>
-       </S.container>
+       </S.Container>
     )
 
 }

@@ -4,12 +4,16 @@ import { Reset } from 'styled-reset';
 import Routes from './routes';
 import AppContext from './vars';
 
+
 function App() {
   const [user, setUser] = useState('');  
+  const [logged, setLogged] = useState(false);  
 
   const userSettings = {
     user: user,
-    setUser
+    setUser,
+    logged: logged,
+    setLogged
   };
 
   return (

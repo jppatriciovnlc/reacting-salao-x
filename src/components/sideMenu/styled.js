@@ -1,7 +1,7 @@
 import styled  from 'styled-components';
 import {  Link } from "react-router-dom";
 
-export const container = styled.div`
+export const Container = styled.div`
     transition: 0.8s;
     width: 200px;
     height: 200px;
