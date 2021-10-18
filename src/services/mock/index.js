@@ -24,7 +24,7 @@ const Mock = () => {
     data.agendamentos.map((item) => {
         data.manicureAgendamentos += item.Manicure;
         data.podologaAgendamentos += item.Podologa;
-        data.totalAgendamentos += item.total
+        data.totalAgendamentos += item.Total
 
         return null
     })

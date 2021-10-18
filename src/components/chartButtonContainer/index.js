@@ -10,7 +10,6 @@ const ChartButtonContainer = (props) => {
     if((props.active !== active)  && (props.active !== undefined)){        
         setActive(props.active)
     }
-    console.log(active)
 
     return(     
         <S.Container>

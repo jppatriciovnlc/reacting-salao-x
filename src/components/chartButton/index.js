@@ -2,8 +2,7 @@ import React from 'react';
 import * as S from './styled';
 
 const ChartButton = (props) => {
-     
-    console.log(props)
+   
 
     return(     
         <S.Container

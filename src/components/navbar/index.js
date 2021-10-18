@@ -5,6 +5,7 @@ import { SideMenu } from '../index';
 
 import { useContext } from 'react';
 import AppContext from '../../vars';
+import { Redirect } from 'react-router-dom';
 
 
 const Navbar = (props) => {
@@ -20,6 +21,10 @@ const Navbar = (props) => {
 
     if(props.active !== active){        
         setActive(props.active)
+    }
+
+    if(props.logged !== true){
+        return <Redirect to='/' />
     }
 
 

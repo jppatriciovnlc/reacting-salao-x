@@ -9,7 +9,7 @@ const Resumos = (props) => {
 
     const context = useContext(AppContext);    
 
-    const data = Mock()
+    const data = context.dataMock
 
     const pieData = [
         { name: 'Podóloga', value: data.podologaAgendamentos },

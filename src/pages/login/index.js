@@ -4,6 +4,8 @@ import { LoginForm, Navbar } from '../../components';
 import { useContext } from 'react';
 import { Redirect } from 'react-router-dom';
 import AppContext from '../../vars';
+import Mock from '../../services/mock'
+
 
 const Login = (props) => {
 
@@ -15,7 +17,12 @@ const Login = (props) => {
         context.setLogged(true);  
     }
 
-    if (context.logged) {
+    
+
+    
+    
+
+    if (context.logged) {         
         return <Redirect to='/resumo' />
     }
 
