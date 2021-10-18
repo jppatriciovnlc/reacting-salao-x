@@ -27,24 +27,26 @@ const LocalPieChart = (props) => {
 
 
     return(
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="90%">
             <PieChart width={1200} height={1200}>
                 <Pie
                     data={data}
                     cx="50%"
-                    cy="45%"
+                    cy="50%"
                     labelLine={false}
                     label={renderCustomizedLabel}
                     outerRadius={150}
                     fill="#8884d8"
                     dataKey="value"
-                    margin={ 5, 5, 5, 5 }
+                    margin={ 3, 3, 3, 3 }
                 >
                     {data.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                 </Pie>
-            <Legend />
+            <Legend 
+                verticalAlign="bottom"
+            />
         </PieChart>
         </ResponsiveContainer>
         

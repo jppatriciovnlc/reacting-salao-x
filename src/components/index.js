@@ -7,3 +7,5 @@ export { default as SideMenu } from './sideMenu';
 export { default as LocalLineChart} from './lineChart';
 export { default as LocalPieChart } from './pieChart';
 export { default as Footer } from './footer';
+export { default as ChartButton } from './chartButton';
+export { default as ChartButtonContainer } from './chartButtonContainer';

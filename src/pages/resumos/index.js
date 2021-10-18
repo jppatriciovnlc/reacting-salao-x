@@ -1,5 +1,5 @@
 import * as S from './styled';
-import {  Navbar, LocalLineChart, LocalPieChart, Footer } from '../../components';
+import {  Navbar, LocalLineChart, LocalPieChart, Footer, ChartButtonContainer } from '../../components';
 import { useContext } from 'react';
 import AppContext from '../../vars';
 import Mock from '../../services/mock'
@@ -7,7 +7,7 @@ import Mock from '../../services/mock'
 
 const Resumos = (props) => {
 
-    const context = useContext(AppContext);
+    const context = useContext(AppContext);    
 
     const data = Mock()
 
@@ -15,6 +15,11 @@ const Resumos = (props) => {
         { name: 'Podóloga', value: data.podologaAgendamentos },
         { name: 'Manicure', value: data.manicureAgendamentos },
     ]
+
+    const handleClick = (time) => {
+
+
+    }
     
 
 
@@ -37,7 +42,10 @@ const Resumos = (props) => {
 
                 <S.Section3>
                     <S.SectionTitle> Agendamentos por Serviço - Últimos 30 dias </S.SectionTitle>
-                    <S.GraphContainer2>
+                    <S.GraphContainer2>                        
+                        <ChartButtonContainer                                
+                            handleClick={handleClick}
+                        />
                         <LocalPieChart
                             data={pieData}
                         />

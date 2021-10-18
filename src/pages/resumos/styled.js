@@ -62,12 +62,19 @@ export const GraphContainer2 = styled.div`
     height: 60vh;
     width: 50vw;
 
+    display: flex;
+    flex-direction: row;
+
     background-color: #faa292;
+
+    border: solid 1px blue;
     
 
-    @media(max-width: 800px) {
-        width: 90vw;
-        
+    @media(max-width: 820px) {
+        width: 90vw;        
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
     }
 `
 

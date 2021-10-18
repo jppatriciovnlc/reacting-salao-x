@@ -59,12 +59,12 @@ export const UL = styled.ul`
 `
 
 export const LI = styled.li`    
-    height: 100%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 150px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px ;
     background-color: ${(props) => props.active === true?  '#fafafa' : 'transparent'};
 `
 

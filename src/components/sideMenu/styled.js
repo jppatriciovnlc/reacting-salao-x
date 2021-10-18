@@ -10,6 +10,7 @@ export const Container = styled.div`
     right: ${(props => props.toggle? "0" : '-200px')};
     background-color: #030303;
     opacity: 0.95;
+    z-index: 999;
 
     
 `
