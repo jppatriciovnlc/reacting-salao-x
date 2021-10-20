@@ -18,3 +18,19 @@ export const Container = styled.div`
     }
 
 `
+
+export const label1 = styled.p`
+    margin-bottom: 10px;
+
+    @media(max-width: 820px) {
+        display: none   
+    }
+`
+
+export const label2 = styled.p`
+    margin-bottom: 10px;
+
+    @media(max-width: 820px) {
+        display: none   
+    }
+`

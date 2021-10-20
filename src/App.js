@@ -26,7 +26,6 @@ function App() {
     setDataMock
   };
 
-  console.log(dataMock)
 
 
   return (

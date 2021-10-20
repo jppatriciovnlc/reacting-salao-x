@@ -9,8 +9,9 @@ const ChartButton = (props) => {
             active={props.active}
         >
             <S.Button
-                onClick={() => props.handleClick()}
+                onClick={(e) => props.handleClick(e.target.value)}
                 active={props.active}
+                value={props.value}
             >
                 {props.label}
             </S.Button>
