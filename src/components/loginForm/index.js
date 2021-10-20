@@ -1,5 +1,5 @@
 import * as S from './styled';
-import { Input, LoginButton, Logo } from '../index';
+import { LoginInput, LoginButton, Logo } from '../index';
 import React, { useState } from 'react';
 
 const LoginForm = (props) => {
@@ -33,12 +33,12 @@ const LoginForm = (props) => {
                 <S.Login> Login </S.Login>
                 <S.Title> Manicure e Podóloga </S.Title>
                 <S.Subtitle>Cuidando bem de você</S.Subtitle>
-                <Input
+                <LoginInput
                     type="text"
                     placeholder="Usuário ou Email"
                     onChange={handleOnChangeUser}
                 />
-                <Input
+                <LoginInput
                     type="password"
                     placeholder="Senha"
                     onChange={handleOnChangePass}

@@ -4,7 +4,6 @@ import { LoginForm, Navbar } from '../../components';
 import { useContext } from 'react';
 import { Redirect } from 'react-router-dom';
 import AppContext from '../../vars';
-import Mock from '../../services/mock'
 
 
 const Login = (props) => {

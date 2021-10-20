@@ -11,7 +11,12 @@ const Select = (props) => {
     }
 
     return(
-        <S.Select width={props.width} onChange={ (e) => handleChange(e) }>
+        <S.Select 
+            width={props.width} 
+            height={props.height}
+            onChange={ (e) => handleChange(e) }
+        
+        >
             {options.map((option, i) => {
                 return(
                     <S.Option key={i} value = {option.value}>{option.label} </S.Option>

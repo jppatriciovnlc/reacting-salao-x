@@ -24,7 +24,7 @@ const ChartButtonContainer = (props) => {
                 active={active === '15'? true : false}
             />
             <ChartButton
-                label="Últimos 30 dias"
+                label="Último Mês"
                 handleClick={props.handleClick}
                 active={active === '30'? true : false}
             />

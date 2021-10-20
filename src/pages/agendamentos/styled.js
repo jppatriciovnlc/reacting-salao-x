@@ -27,6 +27,11 @@ export const Section1 = styled.section`
     opacity: 0.95;
 
     margin-bottom: 1%;
+
+    @media(max-width: 820px) {       
+        height: auto;    
+        padding-top: 3%;    
+    }
 `
 
 export const Section2 = styled.section`
@@ -42,4 +47,20 @@ export const Section2 = styled.section`
     opacity: 0.95;
 
     margin-bottom: 1%;
+
+    
+`
+
+export const SectionTitle = styled.p`
+    font-size: 1.2rem;
+    font-weight: 700;    
+    color: #faa292;
+    font-family: 'roboto';   
+    word-wrap: break-word;
+    text-align: center;
+    padding: 0 10% 0 10%;
+
+    @media(max-width: 820px) {       
+        margin-bottom:  5%;    
+    }
 `

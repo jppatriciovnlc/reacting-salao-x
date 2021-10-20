@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styled';
 
-const Input = (props) => {
+const LoginInput = (props) => {
 
      
     
@@ -25,5 +25,5 @@ const Input = (props) => {
     )
    
 }
-export default Input
+export default LoginInput
 

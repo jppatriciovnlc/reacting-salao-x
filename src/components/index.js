@@ -10,4 +10,8 @@ export { default as Footer } from './footer';
 export { default as ChartButton } from './chartButton';
 export { default as ChartButtonContainer } from './chartButtonContainer';
 export { default as ScheduleForm } from './scheduleForm';
-export { default as Select} from './select'
+export { default as Select} from './select';
+export { default as DatePickerInput } from './datePicker';
+export { default as LoginInput } from './loginInput';
+export { default as SubmitButton } from './submitButton';
+export { default as ScheduleGrid } from './scheduleGrid'

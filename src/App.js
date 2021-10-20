@@ -26,6 +26,8 @@ function App() {
     setDataMock
   };
 
+  console.log(dataMock)
+
 
   return (
     <AppContext.Provider value={userSettings}>

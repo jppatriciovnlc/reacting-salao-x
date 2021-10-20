@@ -3,28 +3,21 @@ import styled  from 'styled-components';
 export const Input = styled.input `
    width: 85%;
    height: ${(props) => props.height? props.height : '50px'};
-
    background-color: #fafafa;
-   color: rgba(0, 0, 0, 1);
+   color: #0a0a0a;
    font-family: 'roboto';
-   font-size: 0.9rem;
-   font-weight: 600;
    padding-left: 2%;
 
-   
-   border: 2px solid #faa292;
+   box-shadow: none;
+   border-radius: 8px;
+   border: 1px solid #fee3de;
 
-   ::placeholder{      
-      //opacity: 1;
-   }  
+   margin-bottom: 20px;   
 
    &:focus {
       transition: 0.5s;
       outline: none;      
-      border: 2px solid #ffffff;
-      background-color: #faa292;
-      
-      font-weight: 700;
+      border: 1px solid #faa292;
    }
 
    

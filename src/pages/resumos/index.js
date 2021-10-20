@@ -2,7 +2,6 @@ import * as S from './styled';
 import {  Navbar, LocalLineChart, LocalPieChart, Footer, ChartButtonContainer } from '../../components';
 import { useContext } from 'react';
 import AppContext from '../../vars';
-import Mock from '../../services/mock'
 
 
 const Resumos = (props) => {
@@ -32,7 +31,7 @@ const Resumos = (props) => {
             <S.Container>
                 
                 <S.Section2>
-                    <S.SectionTitle> Agendamento - Últimos 30 dias </S.SectionTitle>
+                    <S.SectionTitle> Agendamento - Mês atual </S.SectionTitle>
                     <S.GraphContainer>
                         <LocalLineChart
                             data={data.agendamentos}
@@ -41,7 +40,7 @@ const Resumos = (props) => {
                 </S.Section2>
 
                 <S.Section3>
-                    <S.SectionTitle> Agendamentos por Serviço - Últimos 30 dias </S.SectionTitle>
+                    <S.SectionTitle> Agendamentos por Serviço - Mês atual </S.SectionTitle>
                     <S.GraphContainer2>                        
                         <ChartButtonContainer                                
                             handleClick={handleClick}
