@@ -4,7 +4,6 @@
 const Mock = () => {
 
     var dt = new Date();
-
     var month = dt.getMonth() + 1;
     var year = dt.getFullYear();
     var daysInMonth = new Date(year, month, 0).getDate();
